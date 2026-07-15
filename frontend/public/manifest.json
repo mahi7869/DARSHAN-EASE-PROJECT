@@ -1,0 +1,9 @@
+{
+  "short_name": "DarshanEase",
+  "name": "DarshanEase - Temple Darshan Booking",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ff7a00",
+  "background_color": "#ffffff"
+}

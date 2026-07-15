@@ -1,0 +1,198 @@
+/* ===========================================
+   DarshanEase - Custom Theme Stylesheet
+   Color Palette: Saffron / Maroon / Gold
+=========================================== */
+
+:root {
+  --de-primary: #ff7a00;      /* Saffron */
+  --de-primary-dark: #d35400;
+  --de-maroon: #7b0d1e;
+  --de-gold: #d4af37;
+  --de-bg-light: #fbf7f2;
+  --de-text-dark: #2b2118;
+}
+
+/* ---------- Navbar ---------- */
+.de-navbar {
+  background: linear-gradient(90deg, var(--de-maroon), #a11c2e);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.de-logo-icon {
+  font-size: 1.4rem;
+}
+
+.de-user-btn {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.de-user-btn:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+/* ---------- Buttons ---------- */
+.btn-de-primary {
+  background-color: var(--de-primary);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+.btn-de-primary:hover {
+  background-color: var(--de-primary-dark);
+  color: #fff;
+  transform: translateY(-1px);
+}
+.btn-de-primary:disabled {
+  background-color: #f0b27a;
+  cursor: not-allowed;
+}
+
+/* ---------- Hero Section ---------- */
+.de-hero {
+  background: linear-gradient(135deg, var(--de-maroon) 0%, var(--de-primary) 100%);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.de-feature-icon {
+  font-size: 2.5rem;
+}
+
+/* ---------- Temple Cards ---------- */
+.de-temple-card {
+  border: none;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.de-temple-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12) !important;
+}
+
+.de-temple-img {
+  height: 190px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.de-temple-detail-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.de-badge {
+  background-color: #fff3e0;
+  color: var(--de-primary-dark);
+  font-weight: 500;
+  font-size: 0.75rem;
+  padding: 0.4em 0.7em;
+  border-radius: 20px;
+  border: 1px solid #ffd9a8;
+}
+
+/* ---------- Slot Cards ---------- */
+.de-slot-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  transition: box-shadow 0.2s ease;
+}
+.de-slot-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+.de-slot-full {
+  opacity: 0.6;
+}
+
+/* ---------- Auth Pages ---------- */
+.de-auth-page {
+  min-height: calc(100vh - 200px);
+  background: linear-gradient(135deg, #fff3e0, #ffe8d6);
+  padding: 3rem 0;
+}
+.de-auth-card {
+  border: none;
+  border-radius: 16px;
+}
+.de-demo-box {
+  background-color: #fff3e0;
+  border: 1px dashed var(--de-gold);
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+  color: #6b4b1f;
+}
+
+/* ---------- Booking Modal ---------- */
+.de-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+  padding: 1rem;
+}
+.de-modal {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.75rem;
+  width: 100%;
+  max-width: 480px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+.de-slot-summary {
+  background-color: #fff8f0;
+  border-radius: 10px;
+  padding: 1rem;
+  border: 1px solid #ffe0b3;
+}
+
+/* ---------- Admin Dashboard ---------- */
+.de-stat-card {
+  border: none;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--de-primary-dark);
+  border-bottom: 3px solid var(--de-primary);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+/* ---------- Footer ---------- */
+.de-footer {
+  background-color: var(--de-text-dark);
+}
+.footer-link {
+  color: #d9c9b8;
+}
+.footer-link:hover {
+  color: var(--de-gold);
+}
+.text-light-50 {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* ---------- Responsive tweaks ---------- */
+@media (max-width: 576px) {
+  .de-hero h1 {
+    font-size: 1.8rem;
+  }
+  .de-temple-img {
+    height: 160px;
+  }
+}
